@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+
+</head>
+<body>
+    <style>
+    /* background-color: #cfcfc4; */
+        /* background-color: #9e9e95; */
+        
+        
+        
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+        body {
+         background: rgb(13,20,54);
+    background: linear-gradient(180deg, rgba(120,130,164,1) 0%, rgba(120,130,164,1) 30%, rgba(192,160,128,1) 50%, rgba(209,209,209,1) 70%, rgba(239,239,239,1) 100%);;
+        }
+        .main-body {
+          background: rgba(12,4,4, .3);
+          text-align: center;
+          margin-left: 30%;
+          margin-right: 30%;
+        ;
+        }
+        
+        form {
+          padding-top: 5px;
+        }
+
+        .top-header {
+          text-align: center;
+          
+        }
+        .top-header h1 {
+          font-size: 60px;
+          color: white;
+          font-family: 'Roboto', sans-serif;
+        }
+        .top-header p {
+          font-size:30px;
+          color: white;
+          font-family: 'Roboto', sans-serif;
+        }
+        
+        .main-text {
+          color: black;
+          font-size: 110%;
+          font-weight: bold;
+          margin-top: 4px;
+          font-family: 'Roboto', sans-serif;
+        }   
+        
+        .input {
+          margin-bottom: 4px;
+        }
+        
+        button {
+          margin-top: 10px;
+        }
+        
+        .repat {
+          margin-top: 10px;
+          font-weight: bold;
+          font-size: 110%;
+          font-family: 'Roboto', sans-serif;
+
+        }
+        
+        
+        </style>
+    <div class="top-header">
+<h1>Sign Up</h1>
+<p>Please fill out this form to create an account</p>
+</div>
+<hr>
+
+<div class="main-body">
+<form>
+    <select id="roles">
+    <option value="teacher">Teacher</option>
+    <option value="student">Student</option>
+    </select>
+</form>
+
+
+
+<div>
+<p class="main-text">
+    How old are you?
+</p>
+
+</div>
+<div class="Form ">
+    <input class="area" type="number" placeholder="Age Above 15" name="age" required pattern="[0-9\.]+" id= "Age" min= "5" max = "122" required>
+    
+
+</div>
+<div>
+
+
+<div>
+<p class="main-text">
+    Enter Email
+</p>
+</div>
+<div class=" Form">
+    
+    
+    <input class="area" type="text" placeholder="Enter Email" name="email" id="email" pattern="a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+    <small></small>
+    
+</div>
+<div>
+    <p class="main-text">
+       Create a username:
+    </p>    
+</div>
+<div>
+    <div id="form" class=" Form">
+    
+    
+    <input  class="area" type="Username" placeholder="Enter Username" name="User"  id= "Username" pattern="^(?=.*\d).{4,8}$" required >
+    </div>
+    <small></small>
+    
+</div>
+<div>
+    <p class="main-text">
+        Create a password
+    </p>
+</div>
+<div>
+    <div id="form">
+    
+    <input  class="area" type="password" placeholder="Enter Password" name="psw" pattern= "^(?=.*\d).{4,8}$" id="psw" required>
+    <small></small>
+        <br> 
+
+    <label  class="repat"class="main-text" for="psw-repeat">Repeat Password</label> <br>
+    <input class="area" type="password" placeholder="Repeat Password" name="psw-repeat" id="pswrepeat" required >
+    <small></small>
+
+    
+    <br>
+    <button type="submit" button="submit" onclick="submit()">Submit</button>
+   
+    </div>
+
+   
+</div> 
+
+    
+<script src="index.js"></script>
+</div>
+
+
+
+</body>
+
+</html>
+

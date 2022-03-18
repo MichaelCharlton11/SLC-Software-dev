@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src ="https://smtpjs.com/v3/smtp.js"></script>
+    <script src ="index.js"></script>
+
+    <style>
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+html {
+    height: 100%;
+    background: linear-gradient(180deg, rgba(120,130,164,1) 0%, rgba(120,130,164,1) 30%, rgba(192,160,128,1) 50%, rgba(209,209,209,1) 70%, rgba(239,239,239,1) 100%);;
+}
+body {
+    
+    margin:0;
+    padding: 0;
+    background-size: 100%;
+    background-position: center;
+    font-family: 'Roboto', sans-serif;
+    
+   
+    }
+.loginBox {
+    width: 35%;
+    height: 65%;
+    background-color: rgba(12, 4 ,4, .3);
+    color: black;
+    top: 55%;
+    left: 50%;
+    position: absolute;
+    margin-top: 40px;
+    transform: translate(-50%,-50%);
+    box-sizing: border border-box;
+    text-align: center;
+}
+h1 {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 35px;
+    color:whitesmoke;
+}
+.loginBox p {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.loginBox h1 {
+    padding-top: 10px;
+}
+.loginBox input{
+    width: 35%;
+    margin: 0;
+    
+    margin-bottom: 2%;
+    margin-top: 2%;
+    padding: 0;
+}
+#enterButton {
+    width: 25%;
+    margin-top: 5px;
+    transition: all .2 ease-in-out; 
+    background-color: white;
+}
+.header {
+    font-size: 75px;
+    display: flex;
+    padding-top: 15px;
+    align-items: center;
+    justify-content: center;
+}
+
+hr {
+    width: 50%;
+    border: 10px dotted;
+    border-color: white;
+    border-bottom: 0px;
+}
+
+
+
+    </style>
+</head>
+<body>
+    <h1 class="header">Volunteer Tutoring</h1>
+    <div class="loginBox">
+        <h1>Login</h1>  <hr><br>
+        <form>
+            <p>Username</p>
+            <input type="text" name="" id="enterUser" placeholder="Enter Username">
+            <p>Password</p> 
+            <input type="password" id="enterPw" name="" placeholder="Enter Password"> <br>
+            <button  type="button"onclick="verify();GetUserwithEverythird()" id="enterButton">Login</button><br> 
+            <br>
+            <a href="SignUp.html">Dont have an account?"</a> 
+        </form>
+    </div>
+    <script src ="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="index.js"></script>
+</body>
+</html> 
